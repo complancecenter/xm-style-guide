@@ -67,15 +67,23 @@
 
 <p>
   We made a few changes to the global styles so that it would be more usable and hierarchically correct, as well as conforming to our brand and looking nice.
-  I encourage you to <a href="#">check out the global style sheet</a> for all the changes, but I'll list the big ones here. While making these changes, 
+  I encourage you to <a href="https://github.com/complancecenter/xm-style-guide/blob/master/style.less">check out the style sheet</a> for all the changes, but I'll list the big ones here. While making these changes, 
   I tried to stick as much to your pre-existing style names as I could, but after a while the pages just got too complicated, so I just created the same layouts
   with many less divs, named intuitively to what the data it was containing was, so it should be easy to match up to your pre-existing styles.
+</p>
+
+<p>
+  You can check out what all these styles look like over on the <a href="style-gude.php">Style Guide Page</a>. 
+  The <a href="style-gude.php">Style Guide Page</a> has all of the elements listed below on it. For you to check out.
+
+<p>
+  Below I have <span class="highlight">highlighted</span> the places where our fonts are subbed out for specific styles
 </p>
 
 <ul class="disc">
   <li><p><strong>Body</strong></p>
     <pre class="xmsg-code">body {
-  .gotham-narrow-light; <span class="xmsg-note">&lt;!-- This is the default font for all copy on the site --&gt;</span>
+  <span class="highlight">.gotham-narrow-light;</span> <span class="xmsg-note">&lt;!-- This is the default font for all copy on the site --&gt;</span>
   line-height: 1.6;
   font-size: 14px;
   margin: 0;
@@ -90,7 +98,7 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6, .h6 { 
-  .archer-bold; <span class="xmsg-note">&lt;!-- This is the default font for all headings on the site --&gt;</span>
+  <span class="highlight">.archer-bold;</span> <span class="xmsg-note">&lt;!-- This is the default font for all headings on the site --&gt;</span>
   line-height: 1.4em; }
 
 <span class="xmsg-note">&lt;!-- These are all resized so that they can all be utilized --&gt;</span>
@@ -128,7 +136,7 @@ h1.page-title {
 
   <li><p><strong>Links</strong></p>
     <pre class="xmsg-code">a {
-  color: #2BABE2;
+  color: #2BABE2;<span class="xmsg-note">&lt;!-- ICC Brand Blue --&gt;</span>
   text-decoration: underline; <span class="xmsg-note">&lt;!-- This is important to us for usability --&gt;</span>
 
   &amp;:visited { 
@@ -142,27 +150,296 @@ h1.page-title {
   <li><p><strong>Forms</strong></p>
     <p>
       After setting up some forms on the site, we found out that the form styles were all broken.
-      You can find our styles in our <a href="">style sheet</a> or below:
+      You can find our styles in our <a href="https://github.com/complancecenter/xm-style-guide/blob/master/style.less">style sheet</a> or below:
     </p>
-    <pre class="xmsg-code"></pre>
+    <pre class="xmsg-code">fieldset { 
+  border : 1px solid #DDD;
+  margin: 0px;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+legend {
+  <span class="highlight">.gotham-narrow-light-italic;</span>
+  padding: 0 10px;
+  color: #999; }
+
+label {
+  display: block; }
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  padding-left: .5%;
+  padding-right: .5%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  <span class="highlight">.gotham-narrow-medium;</span> }
+
+textarea {
+  padding-left: .5%;
+  padding-right: .5%;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  height: 80px;
+  <span class="highlight">.gotham-narrow-medium;</span>
+  border-color: #CCC; }
+
+  form { 
+    font-size: .9em;
+    
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="range"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"] { 
+      padding: 5px 5px;
+      border: 1px solid #CCC; }
+
+    input[type="search"] {
+      -webkit-appearance: none; }
+
+    input[type="submit"],
+    input[type="reset"] {
+      <span class="highlight">.gotham-narrow-medium;</span>
+      border-radius: 0px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-color: #AAA;
+      text-transform: uppercase;
+      border: 0px;
+      font-size: 1.5em;
+      padding: 5px 15px;
+      color: #FFF;
+
+      &amp;:hover {
+        background-color: #2BABE2;
+        color: #FFF;
+        cursor: pointer; }
+    }// input[type="submit"]
+  }// form</pre>
   </li>
 
   <li><p><strong>Tables</strong></p>
+    <pre class="xmsg-code">table {
+  border-top: 1px solid #EEE;
+  margin: 0 0 1.5em;
+  width: 100%;
+  font-size: .9em;
+  border-collapse: collapse;
+
+  .fa-check {
+    color: green; }
+
+  .fa-times {
+    color: #DDD; }
+}// table
+
+tr:nth-child(even) {
+  background-color: #FEFEFE; }
+  
+th {
+  <span class="highlight">.gotham-narrow-medium;</span>
+  text-align: left;
+  padding: 10px;
+  padding-top: 15px;
+  background-color: #EEE;
+  text-transform: uppercase;
+  color: #444;
+  line-height: 1em;
+  border-bottom: 1px solid #FFF; }
+
+td {
+  text-align: left;
+  padding: 10px 10px;
+  border-bottom: 1px solid #EEE;
+  color: #666; }</pre>
 
   </li>
 
   <li><p><strong>Lists</strong></p>
     <p>
-      Definition Lists: <br />
-      Ordered/Unordered Lists: 
+      Definition Lists:
+      <pre class="xmsg-code">dl { }
+
+dt {
+  .gotham-narrow-medium;
+  float: left;
+  clear: left;
+  margin-right: 15px; }
+  
+dd {
+  .gotham-narrow-light;
+  margin-left: 30px;
+  margin-bottom: 10px; }</pre>
+      Ordered/Unordered Lists:
+      <pre class="xmsg-code">ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+li { 
+  margin-bottom: 10px; }
+
+ul ol, ul ul, ol ol, ol ul {
+  margin-top: 10px; }
+
+ul {
+  &amp;.none   { list-style: none;        margin-bottom: 20px; }
+  &amp;.disc   { list-style-type: disc;   margin-bottom: 20px; }
+  &amp;.square { list-style-type: square; margin-bottom: 20px; }
+  &amp;.circle { list-style-type: circle; margin-bottom: 20px; }
+}// ul
+
+ol {
+  &amp;.armenian              { list-style-type: armenian;              margin-bottom: 20px; }
+  &amp;.cjk-ideographic       { list-style-type: cjk-ideographic;       margin-bottom: 20px; }
+  &amp;.decimal               { list-style-type: decimal;               margin-bottom: 20px; }
+  &amp;.decimal-leading-zero  { list-style-type: decimal-leading-zero;  margin-bottom: 20px; }
+  &amp;.georgian              { list-style-type: georgian;              margin-bottom: 20px; }
+  &amp;.hebrew                { list-style-type: hebrew;                margin-bottom: 20px; }
+  &amp;.hiragana              { list-style-type: hiragana;              margin-bottom: 20px; }
+  &amp;.hiragana-iroha        { list-style-type: hiragana-iroha;        margin-bottom: 20px; }
+  &amp;.katakana              { list-style-type: katakana;              margin-bottom: 20px; }
+  &amp;.katakana-iroha        { list-style-type: katakana-iroha;        margin-bottom: 20px; }
+  &amp;.lower-alpha           { list-style-type: lower-alpha;           margin-bottom: 20px; }
+  &amp;.lower-greek           { list-style-type: lower-greek;           margin-bottom: 20px; }
+  &amp;.lower-latin           { list-style-type: lower-latin;           margin-bottom: 20px; }
+  &amp;.lower-roman           { list-style-type: lower-roman;           margin-bottom: 20px; }
+  &amp;.upper-alpha           { list-style-type: upper-alpha;           margin-bottom: 20px; }
+  &amp;.upper-latin           { list-style-type: upper-latin;           margin-bottom: 20px; }
+  &amp;.upper-roman           { list-style-type: upper-roman;           margin-bottom: 20px; }
+  &amp;.none                  { list-style: none;                       margin-bottom: 20px; }
+}// ol</pre>
   </li>
 
   <li><p><strong>Images</strong></p>
+  <pre class="xmsg-code">img {
+  max-width: 100%; }
 
+.photo-caption {
+  outline: 1px solid #DDD;
+  display: inline-block;
+  padding: 3px;
+  <span class="highlight">.gotham-narrow-light-italic;</span> }
+
+.caption {
+  margin: 0 0 5px 0;
+  text-align: center;
+  font-size: .8em;
+  color: #333;
+  <span class="highlight">.gotham-narrow-light-italic;</span> }</pre>
+  </li>
+
+  <li><p><strong>Copy</strong></p>
+    <p>
+      Included in this section are a few styles such as <code>.list-title</code> &amp; <code>.fine-print</code>, if these are redundant for what you have, 
+      let me know what the name of the styles are so I can document them for my team and we can use them internally.
+    </p>
+    <pre class="xmsg-code">strong, .strong { 
+  <span class="highlight">.gotham-narrow-medium;</span> }
+
+pre { 
+  padding: 10px;
+  color: #555;
+  background-color: #FAFAFA;
+  font-size: .9em; }
+
+code,
+kbd,
+tt,
+var {  }
+
+big,
+.big {
+  font-size: 1.25em; }
+
+small,
+.small { 
+  font-size: .8em; }
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+  
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none; }
+  
+sup,
+sub {
+  font-size: 12px;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+  
+sup {
+  bottom: 1ex; }
+  
+sub {
+  top: .5ex; }
+
+figure {
+  margin: 0; }
+
+.list-title {
+  <span class="highlight">.gotham-narrow-medium;</span>
+  margin-bottom: 0px; }
+
+.fine-print {
+  font-size: .8em;
+  color: #999; }
+
+.center {       text-align: center; }
+.justify {      text-align: justify; }
+.right {        text-align: right; }
+
+.float-left {   float: left; }
+.float-right {  float: right; }
+.clear {        clear: both; }
+
+.top {          vertical-align: top; }
+.middle {       vertical-align: middle; }
+.bottom {       vertical-align: bottom; }</pre>
   </li>
 
   <li><p><strong>Selection</strong></p>
+    <p>
+      We would like to use our brand colors for highlighting text.
+    </p>
+    <pre class="xmsg-code">::selection {
+  background: #2BABE2;
+  color:#FFF; }
 
+::-moz-selection {
+  background: #2BABE2;
+  color: #FFF; }
+
+img::selection {
+  background: transparent; }
+
+img::-moz-selection {
+  background: transparent; }</pre>
+  </li>
+
+  <li><p><strong>Horizontal Rule</strong></p>
+    <pre class="xmsg-code">hr {
+  height: 1px;
+  border: none;
+  background-color: #EEE; }</pre>
   </li>
 </ul>
 
