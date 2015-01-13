@@ -347,6 +347,10 @@
         <input type="tel" id="fax" class="width50" />
       </p>
 
+      <p>
+        <input type="submit" value="Submit!" />
+      </p>
+
     </form>  
 
   </div><!-- .grid12-9 -->
