@@ -1,0 +1,229 @@
+/*****************************************************************************************
+ * Full Stable of Corporate Typography, not all of which are active.
+ * Please refer to our account at cloud.typography.com to see active fonts
+ * If you don't have access ask Eric Frisino for more information.
+ ****************************************************************************************/
+.archer-light {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-weight: 400;
+  font-style: normal;
+}
+.archer-light-italic {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-weight: 400;
+  font-style: italic;
+}
+.archer-book {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-weight: 500;
+  font-style: normal;
+}
+/* ACTIVE */
+.archer-book-italic {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-weight: 500;
+  font-style: italic;
+}
+/* ACTIVE */
+.archer-medium {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-weight: 600;
+  font-style: normal;
+}
+.archer-medium-italic {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-weight: 600;
+  font-style: italic;
+}
+.archer-semibold {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-weight: 700;
+  font-style: normal;
+}
+.archer-semibold-italic {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-weight: 700;
+  font-style: italic;
+}
+.archer-bold {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-weight: 800;
+  font-style: normal;
+}
+/* ACTIVE */
+.archer-bold-italic {
+  font-family: 'Archer SSm A', 'Archer SSm B';
+  font-weight: 800;
+  font-style: italic;
+}
+/* ACTIVE */
+.gotham-extra-light {
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-weight: 200;
+  font-style: normal;
+}
+.gotham-extra-light-italic {
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-weight: 200;
+  font-style: italic;
+}
+.gotham-light {
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-weight: 300;
+  font-style: normal;
+}
+.gotham-light-italic {
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-weight: 300;
+  font-style: italic;
+}
+.gotham-book {
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-weight: 400;
+  font-style: normal;
+}
+/* ACTIVE */
+.gotham-book-italic {
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-weight: 400;
+  font-style: italic;
+}
+.gotham-medium {
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-weight: 500;
+  font-style: normal;
+}
+/* ACTIVE */
+.gotham-medium-italic {
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-weight: 500;
+  font-style: italic;
+}
+.gotham-bold {
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-weight: 700;
+  font-style: normal;
+}
+.gotham-bold-italic {
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-weight: 700;
+  font-style: italic;
+}
+.gotham-black {
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-weight: 800;
+  font-style: normal;
+}
+.gotham-black-italic {
+  font-family: 'Gotham SSm A', 'Gotham SSm B';
+  font-weight: 800;
+  font-style: italic;
+}
+.gotham-narrow-extra-light {
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B';
+  font-weight: 200;
+  font-style: normal;
+}
+.gotham-narrow-extra-light-italic {
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B';
+  font-weight: 200;
+  font-style: italic;
+}
+.gotham-narrow-light {
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B';
+  font-weight: 300;
+  font-style: normal;
+}
+/* ACTIVE */
+.gotham-narrow-light-italic {
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B';
+  font-weight: 300;
+  font-style: italic;
+}
+/* ACTIVE */
+.gotham-narrow-book {
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B';
+  font-weight: 400;
+  font-style: normal;
+}
+/* ACTIVE */
+.gotham-narrow-book-italic {
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B';
+  font-weight: 400;
+  font-style: italic;
+}
+/* ACTIVE */
+.gotham-narrow-medium {
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B';
+  font-weight: 500;
+  font-style: normal;
+}
+/* ACTIVE */
+.gotham-narrow-medium-italic {
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B';
+  font-weight: 500;
+  font-style: italic;
+}
+/* ACTIVE */
+.gotham-narrow-bold {
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B';
+  font-weight: 700;
+  font-style: normal;
+}
+/* ACTIVE */
+.gotham-narrow-bold-italic {
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B';
+  font-weight: 700;
+  font-style: italic;
+}
+/* ACTIVE */
+.gotham-narrow-black {
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B';
+  font-weight: 800;
+  font-style: normal;
+}
+.gotham-narrow-black-italic {
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B';
+  font-weight: 800;
+  font-style: italic;
+}
+.mercury-light {
+  font-family: 'Mercury SSm A', 'Mercury SSm B';
+  font-weight: 300;
+  font-style: normal;
+}
+.mercury-light-italic {
+  font-family: 'Mercury SSm A', 'Mercury SSm B';
+  font-weight: 300;
+  font-style: italic;
+}
+.mercury-book {
+  font-family: 'Mercury SSm A', 'Mercury SSm B';
+  font-weight: 400;
+  font-style: normal;
+}
+.mercury-book-italic {
+  font-family: 'Mercury SSm A', 'Mercury SSm B';
+  font-weight: 400;
+  font-style: italic;
+}
+.mercury-medium {
+  font-family: 'Mercury SSm A', 'Mercury SSm B';
+  font-weight: 500;
+  font-style: normal;
+}
+.mercury-medium-italic {
+  font-family: 'Mercury SSm A', 'Mercury SSm B';
+  font-weight: 500;
+  font-style: italic;
+}
+.mercury-bold {
+  font-family: 'Mercury SSm A', 'Mercury SSm B';
+  font-weight: 700;
+  font-style: normal;
+}
+.mercury-bold-italic {
+  font-family: 'Mercury SSm A', 'Mercury SSm B';
+  font-weight: 700;
+  font-style: italic;
+}
