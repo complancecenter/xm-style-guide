@@ -356,19 +356,21 @@ form input[type="search"] {
 }
 form input[type="submit"],
 form input[type="reset"] {
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B';
+  font-weight: 500;
+  font-style: normal;
   border-radius: 0px;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-color: #FFF;
+  background-color: #AAA;
+  text-transform: uppercase;
   border: 0px;
-  border: 2px solid #B0E0F7;
-  font-size: 1em;
-  padding: 3px 10px;
-  color: #2BABE2;
+  font-size: 1.5em;
+  padding: 5px 15px;
+  color: #FFF;
 }
 form input[type="submit"]:hover,
 form input[type="reset"]:hover {
-  border-color: #2BABE2;
   background-color: #2BABE2;
   color: #FFF;
   cursor: pointer;
@@ -440,13 +442,93 @@ ol ol,
 ol ul {
   margin-top: 10px;
 }
+ul.none {
+  list-style: none;
+  margin-bottom: 20px;
+}
 ul.disc {
-  list-style: disc;
-  margin-left: 20px;
+  list-style-type: disc;
+  margin-bottom: 20px;
+}
+ul.square {
+  list-style-type: square;
+  margin-bottom: 20px;
+}
+ul.circle {
+  list-style-type: circle;
+  margin-bottom: 20px;
+}
+ol.armenian {
+  list-style-type: armenian;
+  margin-bottom: 20px;
+}
+ol.cjk-ideographic {
+  list-style-type: cjk-ideographic;
+  margin-bottom: 20px;
 }
 ol.decimal {
-  list-style: decimal;
-  margin-left: 20px;
+  list-style-type: decimal;
+  margin-bottom: 20px;
+}
+ol.decimal-leading-zero {
+  list-style-type: decimal-leading-zero;
+  margin-bottom: 20px;
+}
+ol.georgian {
+  list-style-type: georgian;
+  margin-bottom: 20px;
+}
+ol.hebrew {
+  list-style-type: hebrew;
+  margin-bottom: 20px;
+}
+ol.hiragana {
+  list-style-type: hiragana;
+  margin-bottom: 20px;
+}
+ol.hiragana-iroha {
+  list-style-type: hiragana-iroha;
+  margin-bottom: 20px;
+}
+ol.katakana {
+  list-style-type: katakana;
+  margin-bottom: 20px;
+}
+ol.katakana-iroha {
+  list-style-type: katakana-iroha;
+  margin-bottom: 20px;
+}
+ol.lower-alpha {
+  list-style-type: lower-alpha;
+  margin-bottom: 20px;
+}
+ol.lower-greek {
+  list-style-type: lower-greek;
+  margin-bottom: 20px;
+}
+ol.lower-latin {
+  list-style-type: lower-latin;
+  margin-bottom: 20px;
+}
+ol.lower-roman {
+  list-style-type: lower-roman;
+  margin-bottom: 20px;
+}
+ol.upper-alpha {
+  list-style-type: upper-alpha;
+  margin-bottom: 20px;
+}
+ol.upper-latin {
+  list-style-type: upper-latin;
+  margin-bottom: 20px;
+}
+ol.upper-roman {
+  list-style-type: upper-roman;
+  margin-bottom: 20px;
+}
+ol.none {
+  list-style: none;
+  margin-bottom: 20px;
 }
 img {
   max-width: 100%;
@@ -1414,4 +1496,8 @@ pre.xmsg-code {
 .xmsg-note {
   color: #C4151C;
   font-style: italic;
+}
+.highlight {
+  background-color: yellow;
+  padding: 0 3px;
 }

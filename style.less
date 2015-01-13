@@ -134,8 +134,7 @@ fieldset {
   padding-left: 1%;
   padding-right: 1%;
   padding-top: 10px;
-  padding-bottom: 10px;
-}
+  padding-bottom: 10px; }
 
 legend {
   .gotham-narrow-light-italic;
@@ -161,8 +160,7 @@ textarea {
   padding-bottom: 6px;
   height: 80px;
   .gotham-narrow-medium;
-  border-color: #CCC;  }
-
+  border-color: #CCC; }
 
   form { font-size: .9em; 
     //label { display: none;}
@@ -184,29 +182,28 @@ textarea {
       border: 1px solid #CCC; }
 
     input[type="search"] {
-      -webkit-appearance: none;
-    }
+      -webkit-appearance: none; }
 
     input[type="submit"],
     input[type="reset"] {
+      .gotham-narrow-medium;
       border-radius: 0px;
       -webkit-appearance: none;
       -moz-appearance: none;
-      background-color: #FFF;
+      background-color: #AAA;
+      text-transform: uppercase;
       border: 0px;
-      border: 2px solid #B0E0F7;
-      font-size: 1em;
-      padding: 3px 10px;
-      color: #2BABE2;
+      font-size: 1.5em;
+      padding: 5px 15px;
+      color: #FFF;
 
       &:hover {
-        border-color: #2BABE2;
         background-color: #2BABE2;
         color: #FFF;
         cursor: pointer; }
+    }// input[type="submit"]
+  }// form
 
-    } // input[type="submit"]
-  }
 
 
 
@@ -226,7 +223,7 @@ table {
 
   .fa-times {
     color: #DDD; }
-}
+}// table
 
 tr:nth-child(even) {
   background-color: #FEFEFE; }
@@ -246,8 +243,7 @@ td {
   text-align: left;
   padding: 10px 10px;
   border-bottom: 1px solid #EEE;
-  color: #666;
-}
+  color: #666; }
 
 
 
@@ -283,13 +279,33 @@ li {
 ul ol, ul ul, ol ol, ol ul {
   margin-top: 10px; }
 
-ul.disc {
-  list-style: disc;
-  margin-left: 20px; }
+ul {
+  &.none   { list-style: none;        margin-bottom: 20px; }
+  &.disc   { list-style-type: disc;   margin-bottom: 20px; }
+  &.square { list-style-type: square; margin-bottom: 20px; }
+  &.circle { list-style-type: circle; margin-bottom: 20px; }
+}// ul
 
-ol.decimal {
-  list-style: decimal;
-  margin-left: 20px; }
+ol {
+  &.armenian              { list-style-type: armenian;              margin-bottom: 20px; }
+  &.cjk-ideographic       { list-style-type: cjk-ideographic;       margin-bottom: 20px; }
+  &.decimal               { list-style-type: decimal;               margin-bottom: 20px; }
+  &.decimal-leading-zero  { list-style-type: decimal-leading-zero;  margin-bottom: 20px; }
+  &.georgian              { list-style-type: georgian;              margin-bottom: 20px; }
+  &.hebrew                { list-style-type: hebrew;                margin-bottom: 20px; }
+  &.hiragana              { list-style-type: hiragana;              margin-bottom: 20px; }
+  &.hiragana-iroha        { list-style-type: hiragana-iroha;        margin-bottom: 20px; }
+  &.katakana              { list-style-type: katakana;              margin-bottom: 20px; }
+  &.katakana-iroha        { list-style-type: katakana-iroha;        margin-bottom: 20px; }
+  &.lower-alpha           { list-style-type: lower-alpha;           margin-bottom: 20px; }
+  &.lower-greek           { list-style-type: lower-greek;           margin-bottom: 20px; }
+  &.lower-latin           { list-style-type: lower-latin;           margin-bottom: 20px; }
+  &.lower-roman           { list-style-type: lower-roman;           margin-bottom: 20px; }
+  &.upper-alpha           { list-style-type: upper-alpha;           margin-bottom: 20px; }
+  &.upper-latin           { list-style-type: upper-latin;           margin-bottom: 20px; }
+  &.upper-roman           { list-style-type: upper-roman;           margin-bottom: 20px; }
+  &.none                  { list-style: none;                       margin-bottom: 20px; }
+}// ol
 
 
 
@@ -1412,3 +1428,5 @@ pre.xmsg-code {
   font-size: .9em; }
 
 .xmsg-note { color: #C4151C; font-style: italic; }
+
+.highlight { background-color: yellow; padding: 0 3px;}
