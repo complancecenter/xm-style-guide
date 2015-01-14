@@ -5,8 +5,159 @@
 
 <h1>Theme Modification Documentation</h1>
 
-<h2 class="section-title">Custom Typography</h2>
-<ul class="disc">
+<h2 class="section-title">Introduction <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
+<p>
+  This document was made to serve as a guide to the theme modifications for the ICC stores, 
+  the goal for us is to do this once and then have it be the same for all stores, so this will be the only time we have to do this.
+  The first sections are general global template styles that apply to all pages, then at the bottom I will include each of the other pages I did with some notes.
+  They were all done with what I could see on <a href="https://icccad.accpacwebstore.com/">our current site site</a>, so I am sure that they are missing a few things like related products
+  <em>(which can be styled the same as 'People who bought this also bought' products)</em> But! If I missed a section or other content please let me know and I will
+  whip up some styles for it real quick for you. Same goes if you have questions or are confused about anything, shoot me <em>(Eric Frisino)</em> a quick email.
+  
+</p>
+<p>
+  <strong>Along with this page, I have included a few others for you to reference:</strong><br />
+  <em style="color:#AAA;">
+    You can access the page by clicking the link below or up in the left hand corner under "Pages"<br />
+  </em>
+</p>
+<table>
+  <tr>
+    <th>Link</th>
+    <th>Description</th>
+    <th style="text-align:center;">Notes</th>
+    <th style="text-align:center;">Image</th>
+    <th style="text-align:center;">Source</th>
+  </tr>
+  <tr>
+    <td><a href="#">This Page</a></td>
+    <td>An informational page about the theme modifications.</td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><a href="shots/"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href=""><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <td><a href="style-guide.php">Style guide</a></td>
+    <td>A page that has all generic HTML styles.</td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><a href="shots/style-guide.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/style-guide.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <td><a href="product-category-parent.php">Product Category Parent Grid</a></td>
+    <td>Styling modifications for the grid view of a parent product category.</td>
+    <td style="text-align:center;"><a href="#product-category-parent"><i class="fa fa-pencil"></i></a></td>
+    <td style="text-align:center;"><a href="shots/product-category-parent.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/product-category-parent.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <td><a href="product-category-parent-rows.php">Product Category Parent Row</a></td>
+    <td>Styling modifications for the row view of a parent product category.</td>
+    <td style="text-align:center;"><a href="#product-category-parent-rows"><i class="fa fa-pencil"></i></a></td>
+    <td style="text-align:center;"><a href="shots/product-category-parent-rows.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/product-category-parent-rows.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <td><a href="product-packaging-bags.php">Product Category Grid</a></td>
+    <td>Styling modifications for the grid view of a product category.</td>
+    <td style="text-align:center;"><a href="#product-packaging-bags"><i class="fa fa-pencil"></i></a></td>
+    <td style="text-align:center;"><a href="shots/product-packaging-bags.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/product-packaging-bags.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <td><a href="product-packaging-bags-rows.php">Product Category Row</a></td>
+    <td>Styling modifications for the row view of a product category.</td>
+    <td style="text-align:center;"><a href="#product-packaging-bags-rows"><i class="fa fa-pencil"></i></a></td>
+    <td style="text-align:center;"><a href="shots/product-packaging-bags-rows.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/product-packaging-bags-rows.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <td><a href="product-single.php">Single Product</a></td>
+    <td>Styling modifications for a single product.</td>
+    <td style="text-align:center;"><a href="#product-single"><i class="fa fa-pencil"></i></a></td>
+    <td style="text-align:center;"><a href="shots/product-single.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/product-single.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <td><a href="form-general-request.php">Forms</a></td>
+    <td>Styling modifications for forms.</td>
+    <td style="text-align:center;"><a href="#form-general-request"><i class="fa fa-pencil"></i></a></td>
+    <td style="text-align:center;"><a href="shots/form-general-request.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/form-general-request.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <th colspan="5" style="text-align:center; color:#999; background-color:#FFF; height:30px; vertical-align:bottom; border-bottom:1px solid #EEE; ">Pages that are not necessary for theme modification but may be nice to have for reference</th>
+  </tr>
+  <tr>
+    <td><a href="labeling-software.php">Labeling Software</a></td>
+    <td>A completed page for our Labeling Software Service.</td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><a href="shots/labeling-software.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/labeling-software.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <td><a href="chemplianceweb.php">ChemplianceWeb</a></td>
+    <td>A completed page for our ChemplianceWeb Software.</td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><a href="shots/chemplianceweb.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/chemplianceweb.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <td><a href="packaging-documentation.php">Packaging Documentation</a></td>
+    <td>Completed page for customer facing downloads on a specific topic.</td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><a href="shots/packaging-documentation.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/packaging-documentation.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <th colspan="5" style="text-align:center; color:#999; background-color:#FFF; height:30px; vertical-align:bottom; border-bottom:1px solid #EEE; ">Other source files</th>
+  </tr>
+  <tr>
+    <td>LESS Stylesheet</td>
+    <td>Working LESS Stylesheet.</td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/style.less"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <td>CSS Stylesheet</td>
+    <td>Compiled CSS Stylesheet.</td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/style.css"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <td>Header</td>
+    <td>File included in all pages, calls <code>small-nav.php</code> or <code>nav-full.php</code>.</td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/inc/header.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <td>Small Navigation</td>
+    <td>Contains a small navigation bar that only highlights the current pages parent.</td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/inc/small-nav.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <td>Full Navigation</td>
+    <td>Contains a full navigation list for your reference. <em>Only displays on this page.</em></td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/inc/nav-full.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+  <tr>
+    <td>Footer</td>
+    <td>Contains the whole footer and is included on every page.</td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><i class="fa fa-meh-o" style="color:#DDD;"></i></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/inc/footer.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+</table>
+
+<h2 class="section-title">Custom Typography <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
+<ul class="circle">
   <li><p><strong>Place the following lines of code in the <code>&lt;head&gt; &lt;/head&gt;</code> section of our theme:</strong></p>
 <pre class="xmsg-code">&lt;link rel="stylesheet" type="text/css" href="//cloud.typography.com/6579332/617026/css/fonts.css" /&gt;
 &lt;link rel="stylesheet" type="text/css" href="http://icc.pub/cms/resources/xm-custom-typography.css" /&gt;
@@ -14,7 +165,7 @@
     <p>This will enable all of our custom typography to be used across the website.</p>
   </li>
   <li><p><strong>ICC's Corporate Typography:</strong></p>
-    <p>I see that you precompile your styles, you can put the following styles in your style sheet as well, so that you can reference them throughout the style sheet.</p>
+    <p>I see that you pre-compile your styles, you can put the following styles in your style sheet as well, so that you can reference them throughout the style sheet.</p>
     <pre class="xmsg-code">.archer-light                       { font-family: 'Archer SSm A', 'Archer SSm B'; font-weight: 400; font-style: normal; }
 .archer-light-italic                { font-family: 'Archer SSm A', 'Archer SSm B'; font-weight: 400; font-style: italic; }
 .archer-book                        { font-family: 'Archer SSm A', 'Archer SSm B'; font-weight: 500; font-style: normal; }
@@ -63,11 +214,12 @@
   </li>
 </ul>
 
-<h2 class="section-title">Global Styles</h2>
+<h2 class="section-title">Global Styles <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
 
 <p>
   We made a few changes to the global styles so that it would be more usable and hierarchically correct, as well as conforming to our brand and looking nice.
-  I encourage you to <a href="https://github.com/complancecenter/xm-style-guide/blob/master/style.less">check out the style sheet</a> for all the changes, but I'll list the big ones here. While making these changes, 
+  I encourage you to <a href="https://github.com/complancecenter/xm-style-guide/blob/master/style.less">check out the style sheet</a> 
+  for all the changes, but I'll list the big ones here. While making these changes, 
   I tried to stick as much to your pre-existing style names as I could, but after a while the pages just got too complicated, so I just created the same layouts
   with many less divs, named intuitively to what the data it was containing was, so it should be easy to match up to your pre-existing styles.
 </p>
@@ -80,7 +232,7 @@
   Below I have <span class="highlight">highlighted</span> the places where our fonts are subbed out for specific styles
 </p>
 
-<ul class="disc">
+<ul class="circle">
   <li><p><strong>Body</strong></p>
     <pre class="xmsg-code">body {
   <span class="highlight">.gotham-narrow-light;</span> <span class="xmsg-note">&lt;!-- This is the default font for all copy on the site --&gt;</span>
@@ -444,6 +596,377 @@ img::-moz-selection {
 </ul>
 
 
+<h2 class="section-title">Header &amp; Navigation Styles <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
+
+<ul class="circle">
+  <li><p><strong>Header</strong></p>
+    <p>
+      In the header itself the only thing that really changed was the fonts.. everything else was solid. 
+      To save time, I didn't actually put in a search box in the header, just styled it like we want it styled, with the font etc.
+      I also didn't style the drop-down for the add to cart thing, but i did change the icon to a fontawesome icon.
+      The drop-down should just be switched over to the <span class="highlight">.gotham-narrow-light;</span> font.
+    </p>
+    <pre class="xmsg-code">.welcome-notice {
+  padding: 10px 0;
+  font-size: .8em;
+  <span class="highlight">.gotham-medium;</span>
+
+  .welcome {
+    display: inline-block;
+    padding-right: 20px; }
+}
+
+.branding {
+  .col3-1 {
+    width: 33.33%;
+    float: left;
+    padding: 20px 0;
+    display: table-cell; }
+
+  .form-search {
+    margin-top: 10px; 
+    border: 1px solid #BBB;
+    padding: 10px;
+    color: #AAA; }
+
+  .cart a {
+    color: #000;
+    text-decoration: none;
+
+    &amp;:visited { 
+      color: #000; }
+    
+    &amp;:hover { 
+      color: darken(#2BABE2, 10%); }
+  }// .cart a
+}// .branding</pre></li>
+  
+  <li><p><strong>Navigation</strong></p>
+    <p>
+      This changed quite a bit, I was told on a few occasions that we could change how the nav drop-down looked but we were never told how we could do it.
+      So I have included what we want it to look like in this mock-up if you go to the top and hover over "<span class="archer-bold">PRODUCTS</span>" 
+      you will be able to see it live so you can inspect it, but can also
+      <a href="https://github.com/complancecenter/xm-style-guide/blob/master/style.less" target="_blank">check it out on github</a>. 
+    </p>
+
+    <p>
+      <strong>Note 1:</strong> <em>The class names are not even close to what you have setup, in your theme so I wont display it below. 
+      I believe it would be less confusing to inspect the different sections. </em> 
+    </p>
+
+    <p>
+      <strong>Note 2:</strong> <em>When the list items are highlighted blue, I would like them the text to stay white the entire time.
+      But I believe that I styled the list wrong to be able to make that happen.</em> 
+    </p>
+
+    <p>
+      <strong>Note 3:</strong> <em>If a parent page of the current page is displayed in the nav bar it should be highlighted, 
+      dark grey with white type but still highlight blue when rolled over. You can see how this should be implemented on almost all the pages.</em> 
+    </p>
+</ul>
+
+
+<h2 class="section-title">Footer Styles <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
+
+<p>
+  For the footer the only big changes are the headers, and the social media icons. Scroll down to the bottom and hover over each one, 
+  I'v set them so that they will light up the primary brand color of each company.
+</p>
+
+<p class="list-title">A couple of the other notable changes are:</p>
+<ul class="circle">
+  <li>All the copy is set to .9em</li>
+  <li>Social Media Icons are using FontAwesome</li>
+</ul>
+
+<pre class="xmgs-code">footer {
+  padding-top: 50px;
+
+  input[type="text"],
+  input[type="email"] {
+    width: 253px; }
+
+  .grid12-3 {
+    width: 23%;
+    margin: 0 1%;
+    float: left; }
+
+  h6.section-title {
+    margin: 0 0 10px 0;
+    padding: 0; }
+
+  a {
+    <span class="highlight">.gotham-narrow-medium;</span>
+    color: #666 !important;
+    text-decoration: none;
+    font-size: .9em;
+    display: inline-block;
+    padding: 10px 10px 7px 10px;
+    margin-bottom: 10px;
+
+    &amp;:hover {
+      background-color: #2BABE2;
+      color: #FFF !important; }
+  }// a
+
+  .main-footer {
+    background-color: rgb( 248, 248, 248);
+    padding: 50px 0 ; }
+
+  .main-footer-content {
+    background-color: #FFF;
+    padding: 20px;
+
+    a {
+      <span class="highlight">.gotham-narrow-medium;</span>
+      color: #666 !important;
+      text-decoration: none;
+      font-size: .9em;
+      display: inline-block;
+      padding: 0;
+      margin-bottom: 0;
+
+      &amp;:hover {
+        background-color: #FFF;
+        color: #2BABE2 !important; }
+    }// a
+  }// .main-footer-content
+
+  .about {
+    a {
+      color: #2BABE2 !important;
+      <span class="highlight">.gotham-narrow-light;</span>
+      text-decoration: underline;
+      font-size: 1em;
+
+      &amp;:visited { 
+        color: darken(#2BABE2, 10%) !important; }
+      
+      &amp;:hover { 
+        color: darken(#2BABE2, 20%) !important; }
+    }// a
+  }// .about
+
+  .copywrite-notice {
+    background-color: #EEE;
+    padding: 20px 0;
+
+    p { 
+      font-size: .9em;
+      color: #AAA;
+      margin: 0; }
+  }// .copywrite-notice
+
+
+
+  ul.social-media-boxes {
+    margin: 20px 0 0 0;
+
+    li {
+      display: inline-block;
+      margin-bottom: 0px;
+      margin-right: 10px; }
+
+    a {
+      display: table-cell;
+      font-size: 1.4em;
+      text-align: center;
+      height: 40px;
+      width: 40px;
+      vertical-align: middle;
+      background-color: #CCC;
+      color: #FFF !important;
+
+      &amp;:hover {
+        color: #FFF !important; }
+
+      &amp;.linkedin:hover  { background-color: #007bb6 !important; }
+      &amp;.facebook:hover  { background-color: #3b5998 !important; }
+      &amp;.twitter:hover   { background-color: #55ACEE !important; }
+      &amp;.gplus:hover     { background-color: #DD4B39 !important; }
+      &amp;.youtube:hover   { background-color: #CD201F !important; }
+    }// a
+  }// ul.social-media-boxes
+}// footer</pre>
+
+
+<a name="product-category-parent"></a>
+<h2 class="section-title">Product Category Parent Grid  <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
+<p class="list-title">Some Notes on this layout:</p>
+<ul class="disc">
+  <li>I made a couple changes to the View As: icons to make them less obtrusive, you can find them here:<br />
+      <a href="img/grid.gif">img/grid.gif</a> &amp; <a href="img/grid-off.gif">img/grid-off.gif</a><br />
+      <a href="img/row.gif">img/row.gif</a> &amp; <a href="img/row-off.gif">img/row-off.gif</a>
+  </li>
+  <li>Removed styling from drop-downs (this should be done site-wide).</li>
+  <li>Set all the text in the category description to <code>.9em</code> the size it normally is.</li>
+  <li>Changed the way the categories on the left highlight and the colors.</li>
+  <li>The paged styles that show on this page should be applied across the entire site.</li>
+  <li>tweaked most of the styles to fit better with our brand.</li>
+</ul>
+<table>
+  <tr>
+    <th style="width:320px;">Link</th>
+    <th>Description</th>
+    <th style="text-align:center; width:75px;">Image</th>
+    <th style="text-align:center; width:75px;">Source</th>
+  </tr>
+  <tr>
+    <td><a href="product-category-parent.php">Product Category Parent Grid</a></td>
+    <td>Styling modifications for the grid view of a parent product category.</td>
+    <td style="text-align:center;"><a href="shots/product-category-parent.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/product-category-parent.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+</table>
+
+<a name="product-category-parent-rows"></a>
+<h2 class="section-title">Product Category Parent Rows <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
+<p class="list-title">Some Notes on this layout:</p>
+<ul class="disc">
+  <li>I made a couple changes to the View As: icons to make them less obtrusive, you can find them here:<br />
+      <a href="img/grid.gif">img/grid.gif</a> &amp; <a href="img/grid-off.gif">img/grid-off.gif</a><br />
+      <a href="img/row.gif">img/row.gif</a> &amp; <a href="img/row-off.gif">img/row-off.gif</a>
+  </li>
+  <li>I made the images 1-fifth the width of the column because the existing image size is far to large for people with small or low res monitors.</li>
+  <li>The layout of the columns is as follows:<br />
+      1-fifth for the product image<br />
+      3-fifths for the product name and sub-info<br />
+      1-fifth for the product price and add to cart button.<br />
+  </li>
+  <li>Removed styling from drop-downs (this should be done site-wide).</li>
+  <li>Set all the text in the category description to <code>.9em</code> the size it normally is.</li>
+  <li>Changed the way the categories on the left highlight and the colors.</li>
+  <li>The paged styles that show on this page should be applied across the entire site.</li>
+  <li>tweaked most of the styles to fit better with our brand.</li>
+</ul>
+<table>
+  <tr>
+    <th style="width:320px;">Link</th>
+    <th>Description</th>
+    <th style="text-align:center; width:75px;">Image</th>
+    <th style="text-align:center; width:75px;">Source</th>
+  </tr>
+  <tr>
+    <td><a href="product-category-parent-rows.php">Product Category Parent Row</a></td>
+    <td>Styling modifications for the row view of a parent product category.</td>
+    <td style="text-align:center;"><a href="shots/product-category-parent-rows.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/product-category-parent-rows.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+</table>
+
+<a name="product-packaging-bags"></a>
+<h2 class="section-title">Product Category Grid <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
+<p class="list-title">Some Notes on this layout:</p>
+<ul class="disc">
+  <li>I made a couple changes to the View As: icons to make them less obtrusive, you can find them here:<br />
+      <a href="img/grid.gif">img/grid.gif</a> &amp; <a href="img/grid-off.gif">img/grid-off.gif</a><br />
+      <a href="img/row.gif">img/row.gif</a> &amp; <a href="img/row-off.gif">img/row-off.gif</a>
+  </li>
+  <li>Removed styling from drop-downs (this should be done site-wide).</li>
+  <li>Set all the text in the category description to <code>.9em</code> the size it normally is.</li>
+  <li>tweaked most of the styles to fit better with our brand.</li>
+</ul>
+<table>
+  <tr>
+    <th style="width:320px;">Link</th>
+    <th>Description</th>
+    <th style="text-align:center; width:75px;">Image</th>
+    <th style="text-align:center; width:75px;">Source</th>
+  </tr>
+  <tr>
+    <td><a href="product-packaging-bags.php">Product Category Grid</a></td>
+    <td>Styling modifications for the grid view of a product category.</td>
+    <td style="text-align:center;"><a href="shots/product-packaging-bags.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/product-packaging-bags.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+</table>
+
+<a name="product-packaging-bags-rows"></a>
+<h2 class="section-title">Product Category Rows <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
+<p class="list-title">Some Notes on this layout:</p>
+<ul class="disc">
+  <li>I made a couple changes to the View As: icons to make them less obtrusive, you can find them here:<br />
+      <a href="img/grid.gif">img/grid.gif</a> &amp; <a href="img/grid-off.gif">img/grid-off.gif</a><br />
+      <a href="img/row.gif">img/row.gif</a> &amp; <a href="img/row-off.gif">img/row-off.gif</a>
+  </li>
+  <li>I made the images 1-fifth the width of the column because the existing image size is far to large for people with small or low res monitors.</li>
+  <li>The layout of the columns is as follows:<br />
+      1-fifth for the product image<br />
+      3-fifths for the product name and sub-info<br />
+      1-fifth for the product price and add to cart button.<br />
+  </li>
+  <li>Removed styling from drop-downs (this should be done site-wide).</li>
+  <li>Set all the text in the category description to <code>.9em</code> the size it normally is.</li>
+  <li>tweaked most of the styles to fit better with our brand.</li>
+</ul>
+<table>
+  <tr>
+    <th style="width:320px;">Link</th>
+    <th>Description</th>
+    <th style="text-align:center; width:75px;">Image</th>
+    <th style="text-align:center; width:75px;">Source</th>
+  </tr>
+  <tr>
+    <td><a href="product-packaging-bags-rows.php">Product Category Row</a></td>
+    <td>Styling modifications for the row view of a product category.</td>
+    <td style="text-align:center;"><a href="shots/product-packaging-bags-rows.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/product-packaging-bags-rows.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+</table>
+
+<a name="product-single"></a>
+<h2 class="section-title">Single Product <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
+<p class="list-title">Some Notes on this layout:</p>
+<ul class="disc">
+  <li>I could only style what I could see on our install on your servers and they didn't have any of the up-sells 
+    or related products on them so I styled the "you may also be interested in..." section,
+    the styles for this section can be taken and used in the other sections wherever they show up.
+  </li>
+  <li>Most of the global styles that were set up worked well here but there was still some need to tweak styles to fit better with our brand.</li>
+</ul>
+<table>
+  <tr>
+    <th style="width:320px;">Link</th>
+    <th>Description</th>
+    <th style="text-align:center; width:75px;">Image</th>
+    <th style="text-align:center; width:75px;">Source</th>
+  </tr>
+  <tr>
+    <td><a href="product-single.php">Single Product</a></td>
+    <td>Styling modifications for a single product.</td>
+    <td style="text-align:center;"><a href="shots/product-single.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/product-single.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+</table>
+
+<a name="form-general-request"></a>
+<h2 class="section-title">Forms <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
+<p class="list-title">Some Notes on this layout:</p>
+<ul class="disc">
+  <li>There were no styles/the styles that did exist were all broken when we set up test forms on our install on your servers, so I built out styles in the global styles, but you can see them in this page.</li>
+</ul>
+<table>
+  <tr>
+    <th style="width:320px;">Link</th>
+    <th>Description</th>
+    <th style="text-align:center; width:75px;">Image</th>
+    <th style="text-align:center; width:75px;">Source</th>
+  </tr>
+  <tr>
+    <td><a href="form-general-request.php">Forms</a></td>
+    <td>Styling modifications for forms.</td>
+    <td style="text-align:center;"><a href="shots/form-general-request.png"><i class="fa fa-file-image-o"></i></a></td>
+    <td style="text-align:center;"><a href="https://github.com/complancecenter/xm-style-guide/blob/master/form-general-request.php"><i class="fa fa-github-alt"></i></a></td>
+  </tr>
+</table>
+
+
+
+
+  
+  
+  
+  
 
 
 <div class="clear"> </div>
