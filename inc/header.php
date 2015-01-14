@@ -16,6 +16,7 @@
 </head>
 
 <body>
+<a name="top"></a>
 <? include_once("top-bar.php") ?>
 <div class="content">
 
