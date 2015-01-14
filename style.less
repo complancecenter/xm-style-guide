@@ -215,6 +215,7 @@ table {
   width: 100%;
   font-size: .9em;
   border-collapse: collapse;
+  border-top: 1px solid #EEE;
 
   &.vertical { border-top: 1px solid #EEE; }
 
@@ -280,31 +281,31 @@ ul ol, ul ul, ol ol, ol ul {
   margin-top: 10px; }
 
 ul {
-  &.none   { list-style: none;        margin-bottom: 20px; }
-  &.disc   { list-style-type: disc;   margin-bottom: 20px; }
-  &.square { list-style-type: square; margin-bottom: 20px; }
-  &.circle { list-style-type: circle; margin-bottom: 20px; }
+  &.none   { list-style: none;        margin: 0 0 20px 0; }
+  &.disc   { list-style-type: disc;   margin: 0 0 20px 20px; }
+  &.square { list-style-type: square; margin: 0 0 20px 20px; }
+  &.circle { list-style-type: circle; margin: 0 0 20px 20px; }
 }// ul
 
 ol {
-  &.armenian              { list-style-type: armenian;              margin-bottom: 20px; }
-  &.cjk-ideographic       { list-style-type: cjk-ideographic;       margin-bottom: 20px; }
-  &.decimal               { list-style-type: decimal;               margin-bottom: 20px; }
-  &.decimal-leading-zero  { list-style-type: decimal-leading-zero;  margin-bottom: 20px; }
-  &.georgian              { list-style-type: georgian;              margin-bottom: 20px; }
-  &.hebrew                { list-style-type: hebrew;                margin-bottom: 20px; }
-  &.hiragana              { list-style-type: hiragana;              margin-bottom: 20px; }
-  &.hiragana-iroha        { list-style-type: hiragana-iroha;        margin-bottom: 20px; }
-  &.katakana              { list-style-type: katakana;              margin-bottom: 20px; }
-  &.katakana-iroha        { list-style-type: katakana-iroha;        margin-bottom: 20px; }
-  &.lower-alpha           { list-style-type: lower-alpha;           margin-bottom: 20px; }
-  &.lower-greek           { list-style-type: lower-greek;           margin-bottom: 20px; }
-  &.lower-latin           { list-style-type: lower-latin;           margin-bottom: 20px; }
-  &.lower-roman           { list-style-type: lower-roman;           margin-bottom: 20px; }
-  &.upper-alpha           { list-style-type: upper-alpha;           margin-bottom: 20px; }
-  &.upper-latin           { list-style-type: upper-latin;           margin-bottom: 20px; }
-  &.upper-roman           { list-style-type: upper-roman;           margin-bottom: 20px; }
-  &.none                  { list-style: none;                       margin-bottom: 20px; }
+  &.armenian              { list-style-type: armenian;              margin: 0 0 20px 20px; }
+  &.cjk-ideographic       { list-style-type: cjk-ideographic;       margin: 0 0 20px 20px; }
+  &.decimal               { list-style-type: decimal;               margin: 0 0 20px 20px; }
+  &.decimal-leading-zero  { list-style-type: decimal-leading-zero;  margin: 0 0 20px 20px; }
+  &.georgian              { list-style-type: georgian;              margin: 0 0 20px 20px; }
+  &.hebrew                { list-style-type: hebrew;                margin: 0 0 20px 20px; }
+  &.hiragana              { list-style-type: hiragana;              margin: 0 0 20px 20px; }
+  &.hiragana-iroha        { list-style-type: hiragana-iroha;        margin: 0 0 20px 20px; }
+  &.katakana              { list-style-type: katakana;              margin: 0 0 20px 20px; }
+  &.katakana-iroha        { list-style-type: katakana-iroha;        margin: 0 0 20px 20px; }
+  &.lower-alpha           { list-style-type: lower-alpha;           margin: 0 0 20px 20px; }
+  &.lower-greek           { list-style-type: lower-greek;           margin: 0 0 20px 20px; }
+  &.lower-latin           { list-style-type: lower-latin;           margin: 0 0 20px 20px; }
+  &.lower-roman           { list-style-type: lower-roman;           margin: 0 0 20px 20px; }
+  &.upper-alpha           { list-style-type: upper-alpha;           margin: 0 0 20px 20px; }
+  &.upper-latin           { list-style-type: upper-latin;           margin: 0 0 20px 20px; }
+  &.upper-roman           { list-style-type: upper-roman;           margin: 0 0 20px 20px; }
+  &.none                  { list-style: none;                       margin: 0 0 20px 0; }
 }// ol
 
 
@@ -496,7 +497,7 @@ nav {
   ul {
     display: inline-block;
     width: 100%;
-    position: relative; }
+    position: relative; }// ul
 }// nav
 
 ul.nav li {
@@ -599,7 +600,8 @@ ul.nav li {
                 color: #000;
 
                 &:hover {
-                  background-color: rgb( 248, 248, 248); }
+                  background-color: rgb( 248, 248, 248);
+                   }
               }// &.list-title
               
               a {
@@ -1025,7 +1027,7 @@ ul.nav li {
     text-align: center;
     .gotham-narrow-bold;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 12px;
     width: 60%;
     padding: 10px;
     background-color: #AAA;

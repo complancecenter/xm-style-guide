@@ -380,6 +380,7 @@ table {
   width: 100%;
   font-size: .9em;
   border-collapse: collapse;
+  border-top: 1px solid #EEE;
 }
 table.vertical {
   border-top: 1px solid #EEE;
@@ -444,91 +445,91 @@ ol ul {
 }
 ul.none {
   list-style: none;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 ul.disc {
   list-style-type: disc;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ul.square {
   list-style-type: square;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ul.circle {
   list-style-type: circle;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.armenian {
   list-style-type: armenian;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.cjk-ideographic {
   list-style-type: cjk-ideographic;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.decimal {
   list-style-type: decimal;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.decimal-leading-zero {
   list-style-type: decimal-leading-zero;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.georgian {
   list-style-type: georgian;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.hebrew {
   list-style-type: hebrew;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.hiragana {
   list-style-type: hiragana;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.hiragana-iroha {
   list-style-type: hiragana-iroha;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.katakana {
   list-style-type: katakana;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.katakana-iroha {
   list-style-type: katakana-iroha;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.lower-alpha {
   list-style-type: lower-alpha;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.lower-greek {
   list-style-type: lower-greek;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.lower-latin {
   list-style-type: lower-latin;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.lower-roman {
   list-style-type: lower-roman;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.upper-alpha {
   list-style-type: upper-alpha;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.upper-latin {
   list-style-type: upper-latin;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.upper-roman {
   list-style-type: upper-roman;
-  margin-bottom: 20px;
+  margin: 0 0 20px 20px;
 }
 ol.none {
   list-style: none;
-  margin-bottom: 20px;
+  margin: 0 0 20px 0;
 }
 img {
   max-width: 100%;
@@ -1143,7 +1144,7 @@ ul.nav li .container ul li:hover .graphics {
   font-weight: 700;
   font-style: normal;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 12px;
   width: 60%;
   padding: 10px;
   background-color: #AAA;
