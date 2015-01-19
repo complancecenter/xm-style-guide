@@ -29,6 +29,33 @@
     <li><a href="#">UN Model Regulations</a></li>
     <li><a href="#">WHMIS</a></li>
   </ul>
+
+  <div class="cat-section">
+    <div class="cat-title-container">
+      <div class="cat-title-cell">
+        <h2 class="aside-section-title">Filters</h2>
+      </div>
+    </div>
+    <ul class="sub-filter-list">
+      <li><a href="#">IATA</a> <span class="quant">6</span></li>
+      <li><a href="#">ICC</a> <span class="quant">19</span></li>
+      <li><a href="#">J. J. Keller</a> <span class="quant">9</span></li>
+      <li><a href="#">Mancomm</a> <span class="quant">12</span></li>
+      <li><a href="#">View All</a></li>
+    </ul>
+  </div>
+
+  <div class="cat-section">
+    <div class="cat-title-container">
+      <div class="cat-title-cell">
+        <h2 class="aside-section-title">Custom</h2>
+      </div>
+    </div>
+    <p>
+      But I didn't take wasn't optimistic it could be done for an answer. I'm in Vegas this week and would like to point out the Blue Man Group is *actually* hiring. The support group?
+    </p>
+  </div>
+  
 </div>
 <!-- END SIDEBAR FOR CATEGORY LISTINGS -->
 
