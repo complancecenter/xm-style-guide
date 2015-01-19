@@ -64,7 +64,7 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0;
-  border-top: 5px solid rgb(51, 51, 51); }
+  border-top: 5px solid #032236; }
 
 
 
@@ -738,9 +738,14 @@ ul.nav li {
   width: 91.67%;
   float: left; }
 
-.grid12-10 {
+.grid12-12 {
   width: 100%;
   float: left; }
+
+.grid12-175 {
+  width: 11.4%;
+  float: left;
+}
 
 .page-block { clear: right; }
 
@@ -844,6 +849,38 @@ ul.nav li {
     }// li
   }// ul.sub-cat-list
 }// .product-category-list
+
+.cat-section {
+  margin-top: 20px;
+
+  .sub-filter-list {
+    font-size: 12px;
+    margin-top: 10px;
+
+    li {
+      &:before {
+        font-family: FontAwesome;
+        content: "\f105";
+        color: #aaa;
+        left: 0;
+        padding-right: 10px; }
+    }// li
+
+    a {
+      text-decoration: none;
+      color: #000;
+
+      &:hover {
+        color: #2BABE2; }
+    }// a
+
+    .quant { 
+      color: #999;
+      .gotham-light-italic; }
+  }// .sub-filter-list
+
+  p { font-size: 12px; margin-right: 20px;}
+}// .cat-section 
 
 
 .product-category-products {
@@ -1064,6 +1101,31 @@ ul.nav li {
     margin-top: 10px; }
 }// .single-prod-image
 
+.prod-img-nav {
+  padding: 0 5px; }
+
+.single-prod-more-img {
+
+  .img { 
+    width: 30%; 
+    float: left; 
+    margin-top: 20px; }
+
+  .nav { 
+    width: 3%; 
+    float: left; 
+    margin-top: 20px; 
+    padding-top: 45px; 
+    color: #AAA;
+  
+    &:hover {
+      color: #000;
+      cursor: pointer; }
+  }// .nav
+}// .single-prod-more-img
+
+
+
 .single-prod-info {
   margin: 0px 20px;
 
@@ -1099,7 +1161,11 @@ ul.nav li {
     .single-prod-availablity {
       float: right;
       font-size: 11px;
-      color: #999; }
+      color: #999;
+      text-align: right;
+
+      .required { color: #2BABE2;  }
+    }
 
     .single-prod-price {
       color: #2BABE2;
@@ -1153,6 +1219,19 @@ ul.nav li {
       &:hover {
         background-color: darken(#2BABE2, 5%); }
     }// .single-prod-add-to-cart
+
+    .single-prod-actions {
+      margin-top: 20px;
+
+      .wishlist,
+      .compare,
+      .share {
+        margin-right: 20px;
+        color: #999;
+
+        &:hover { color: #000; cursor: pointer; }
+      }
+    }// .single-prod-actions
   }// .single-prod-stock-data
 }// .single-prod-info
 
@@ -1253,10 +1332,40 @@ ul.nav li {
 // PRODUCTS YOU MAY LIKE
 //--------------------------------------------------------------
 .single-prod-you-may-also-like {
+  margin-right: 20px;
+
+  .product-container {
+    height: auto;
+
+    .product-add-to-cart {
+      font-size: 10px; }
+    
+    &:hover { box-shadow: none; }
+  }// .product-container
+}// .single-prod-you-may-also-like
+
+
+//--------------------------------------------------------------
+// RELATED PRODUCTS
+//--------------------------------------------------------------
+.single-prod-related {
+
+  h5.section-title {
+    margin-top: 125px;
+    border-bottom: 1px solid #DDD;
+  }
+
   .product-container {
     height: auto;
     
     &:hover { box-shadow: none; }
+
+    .product-image {
+      padding: 5px; }
+
+    .product-name { 
+      font-size: 16px !important; }
+
   }// .product-container
 }// .single-prod-you-may-also-like
 
@@ -1432,3 +1541,5 @@ pre.xmsg-code {
 .xmsg-note { color: #C4151C; font-style: italic; }
 
 .highlight { background-color: yellow; padding: 0 3px;}
+
+.align-right { text-align: right; }
