@@ -17,6 +17,14 @@
     <div class="single-prod-image">
       <img src="img/prod-img.gif" width="100%" />
     </div>
+    
+    <div class="single-prod-more-img">
+      <div class="nav"><i class="fa fa-caret-left"></i></div>
+      <div class="img"><div class="prod-img-nav"><img src="img/prod-img.gif" width="100%" /></div></div>
+      <div class="img"><div class="prod-img-nav"><img src="img/prod-img.gif" width="100%" /></div></div>
+      <div class="img"><div class="prod-img-nav"><img src="img/prod-img.gif" width="100%" /></div></div>
+      <div class="nav align-right"><i class="fa fa-caret-right"></i></div>
+    </div>
   </div>
 
   <div class="grid12-5">
@@ -30,7 +38,10 @@
       </div>
 
       <div class="single-prod-stock-data">
-        <div class="single-prod-availablity">Availability: Limited Stock</div>
+        <div class="single-prod-availablity">
+          Availability: Limited Stock<br />
+          <span class="required">* Required Fields</span>
+        </div>
         <div class="single-prod-price">CA $7.25</div>
         <div class="single-prod-price-breaks">
           <p>
@@ -50,7 +61,11 @@
           <span class="single-prod-add-to-cart-container">
             <span class="single-prod-add-to-cart">Add to Cart</span>
           </span>
-
+        </div>
+        <div class="single-prod-actions">
+          <span class="wishlist"><i class="fa fa-heart"></i> Add to Wishlist</span>
+          <span class="compare"><i class="fa fa-chevron-right"></i><i class="fa fa-chevron-left"></i> Add to Compare</span>
+          <span class="share"><i class="fa fa-thumbs-up"></i> Share</span>
         </div>
       </div>
     </div><div class="clear"> </div>
@@ -81,8 +96,8 @@
   <div class="clear"> </div>
 </div>
 
-<div class="single-prod-container grid12-12">
-  <div class="single-prod-info-tabs-container grid12-9">
+<div class="single-prod-container grid12-9">
+  <div class="single-prod-info-tabs-container grid12-12">
     
     <div id="single-prod-tabs">
       <ul>
@@ -155,7 +170,8 @@
 
   <div class="clear"> </div>
 
-  <div class="single-prod-you-may-also-like grid12-9">
+  <div class="grid12-12">
+    <div class="single-prod-you-may-also-like">
     <h5 class="section-title">You may also be interested in the following products:</h5>
     <div class="product-cat-row">
     <div class="product-container grid5-1">
@@ -217,7 +233,7 @@
         <img src="img/prod-img.gif" width="100%" height="auto" />
       </div>
       <h6 class="product-name">
-        30x37" Siftproof/Leakproof Liner Bag
+        30x37" Siftproof / Leakproof Liner Bag
       </h6>
       <div class="product-note">
         
@@ -248,11 +264,35 @@
       </div>
     </div>
   </div>
+  </div>
   </div><!-- .single-prod-people-who-bought-container -->
 
 </div>
 
-
+<div class="grid12-3">
+  <div class="single-prod-related">
+    <h5 class="section-title">Related Products</h5>
+    <div class="product-cat-row">
+      <div class="product-container grid5-5">
+        <div class="product-image">
+          <img src="img/prod-img.gif" width="100%" height="auto" />
+        </div>
+        <h6 class="product-name">
+          30x30" Pressure Bag
+        </h6>
+        <div class="product-note">
+          
+        </div>
+        <div class="product-price">
+          CA $4.58
+        </div>
+        <div class="product-add-to-cart">
+          Add to Cart
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
 <div class="clear"> </div>
 
