@@ -13,8 +13,9 @@
   They were all done with what I could see on <a href="https://icccad.accpacwebstore.com/">our current site site</a>, so I am sure that they are missing a few things like related products
   <em>(which can be styled the same as 'People who bought this also bought' products)</em> But! If I missed a section or other content please let me know and I will
   whip up some styles for it real quick for you. Same goes if you have questions or are confused about anything, shoot me <em>(Eric Frisino)</em> a quick email.
-  
 </p>
+<p>
+ We are good with all the js animations and fading etc. however i did not build any of that into the template site, this site is for display, looks only.
 <p>
   <strong>Along with this page, I have included a few others for you to reference:</strong><br />
   <em style="color:#AAA;">
@@ -244,6 +245,7 @@
   </li>
 
   <li><p><strong>Headings</strong></p>
+    <p>It is <strong>very important</strong> that the sizes of the headings are adjusted so that they can be hierarchically correct in the page flow.</p>
     <pre class="xmsg-code">h1, .h1,
 h2, .h2,
 h3, .h3,
@@ -606,6 +608,11 @@ img::-moz-selection {
       I also didn't style the drop-down for the add to cart thing, but i did change the icon to a fontawesome icon.
       The drop-down should just be switched over to the <span class="highlight">.gotham-narrow-light;</span> font.
     </p>
+
+    <p>
+      I would like to change the Cart icon to FontAweseome's <code>&lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;</code><br />
+      and the home icon in the navigation to FontAwesome's <code>&lt;i class="fa fa-home"&gt;&lt;/i&gt;</code>
+    </p>
     <pre class="xmsg-code">.welcome-notice {
   padding: 10px 0;
   font-size: .8em;
@@ -647,6 +654,11 @@ img::-moz-selection {
       So I have included what we want it to look like in this mock-up if you go to the top and hover over "<span class="archer-bold">PRODUCTS</span>" 
       you will be able to see it live so you can inspect it, but can also
       <a href="https://github.com/complancecenter/xm-style-guide/blob/master/style.less" target="_blank">check it out on github</a>. 
+    </p>
+
+    <p>
+      I would like to change the Cart icon to FontAweseome's <code>&lt;i class="fa fa-shopping-cart"&gt;&lt;/i&gt;</code><br />
+      and the home icon in the navigation to FontAwesome's <code>&lt;i class="fa fa-home"&gt;&lt;/i&gt;</code>
     </p>
 
     <p>
@@ -794,9 +806,9 @@ img::-moz-selection {
 <h2 class="section-title">Product Category Parent Grid  <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
 <p class="list-title">Some Notes on this layout:</p>
 <ul class="disc">
-  <li>I made a couple changes to the View As: icons to make them less obtrusive, you can find them here:<br />
+  <li>I made a couple changes to the View As: icons to make them less obtrusive<!-- , you can find them here:<br />
       <a href="img/grid.gif">img/grid.gif</a> &amp; <a href="img/grid-off.gif">img/grid-off.gif</a><br />
-      <a href="img/row.gif">img/row.gif</a> &amp; <a href="img/row-off.gif">img/row-off.gif</a>
+      <a href="img/row.gif">img/row.gif</a> &amp; <a href="img/row-off.gif">img/row-off.gif</a> -->However, you can use the icons you already have for these.
   </li>
   <li>Removed styling from drop-downs (this should be done site-wide).</li>
   <li>Set all the text in the category description to <code>.9em</code> the size it normally is.</li>
@@ -823,9 +835,9 @@ img::-moz-selection {
 <h2 class="section-title">Product Category Parent Rows <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
 <p class="list-title">Some Notes on this layout:</p>
 <ul class="disc">
-  <li>I made a couple changes to the View As: icons to make them less obtrusive, you can find them here:<br />
+  <li>I made a couple changes to the View As: icons to make them less obtrusive<!-- , you can find them here:<br />
       <a href="img/grid.gif">img/grid.gif</a> &amp; <a href="img/grid-off.gif">img/grid-off.gif</a><br />
-      <a href="img/row.gif">img/row.gif</a> &amp; <a href="img/row-off.gif">img/row-off.gif</a>
+      <a href="img/row.gif">img/row.gif</a> &amp; <a href="img/row-off.gif">img/row-off.gif</a> -->However, you can use the icons you already have for these.
   </li>
   <li>I made the images 1-fifth the width of the column because the existing image size is far to large for people with small or low res monitors.</li>
   <li>The layout of the columns is as follows:<br />
@@ -858,9 +870,9 @@ img::-moz-selection {
 <h2 class="section-title">Product Category Grid <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
 <p class="list-title">Some Notes on this layout:</p>
 <ul class="disc">
-  <li>I made a couple changes to the View As: icons to make them less obtrusive, you can find them here:<br />
+  <li>I made a couple changes to the View As: icons to make them less obtrusive<!-- , you can find them here:<br />
       <a href="img/grid.gif">img/grid.gif</a> &amp; <a href="img/grid-off.gif">img/grid-off.gif</a><br />
-      <a href="img/row.gif">img/row.gif</a> &amp; <a href="img/row-off.gif">img/row-off.gif</a>
+      <a href="img/row.gif">img/row.gif</a> &amp; <a href="img/row-off.gif">img/row-off.gif</a> -->However, you can use the icons you already have for these.
   </li>
   <li>Removed styling from drop-downs (this should be done site-wide).</li>
   <li>Set all the text in the category description to <code>.9em</code> the size it normally is.</li>
@@ -885,9 +897,9 @@ img::-moz-selection {
 <h2 class="section-title">Product Category Rows <span style="float:right;"><a href="#top"><i class="fa fa-chevron-up"></i></a></span></h2>
 <p class="list-title">Some Notes on this layout:</p>
 <ul class="disc">
-  <li>I made a couple changes to the View As: icons to make them less obtrusive, you can find them here:<br />
+  <li>I made a couple changes to the View As: icons to make them less obtrusive<!-- , you can find them here:<br />
       <a href="img/grid.gif">img/grid.gif</a> &amp; <a href="img/grid-off.gif">img/grid-off.gif</a><br />
-      <a href="img/row.gif">img/row.gif</a> &amp; <a href="img/row-off.gif">img/row-off.gif</a>
+      <a href="img/row.gif">img/row.gif</a> &amp; <a href="img/row-off.gif">img/row-off.gif</a> -->However, you can use the icons you already have for these.
   </li>
   <li>I made the images 1-fifth the width of the column because the existing image size is far to large for people with small or low res monitors.</li>
   <li>The layout of the columns is as follows:<br />
